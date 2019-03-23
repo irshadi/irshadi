@@ -258,9 +258,13 @@ body {
     -webkit-font-smoothing: antialiased;
     color: #5e5e5e;
     margin-left: 25px;
-
 }
 
 .linkto a:hover{
     color: #1B74AF;
 }
+
+/* Test 
+.portfolio-hover {}
+*/ 
+
