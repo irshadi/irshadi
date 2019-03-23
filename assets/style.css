@@ -101,13 +101,18 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    padding: 2.5% 10%;
     align-items: center;
+}
+
+.align {
+    padding: 2.5% 10%;
 }
 
 .container-inline {
     display: inline-flex;
 }
+
+.div {display: inline;}
 
 /************************************************/
 /*Navigation*/
@@ -154,11 +159,20 @@ body {
 
 .one-content {
     justify-content: flex-start;
+    display: block;
 }
 
 .half-content {
     display: flex;
     justify-content: space-around;
+}
+
+.third-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
 }
 
 @media all and (max-width: 640px) {
@@ -169,5 +183,86 @@ body {
 }
 
 .portfolio {
+    align-content: stretch;
+    justify-content: center;
+}
+
+.portfolio img {
+    width: 486px;
+    height: auto;
+}
+
+.image-portfolio {
+    opacity: 1;
+    transition: .5s ease;
+    display: block
+    backface-visibility: hidden;
+}
+
+.overlay {
+}
+
+.overlay-content {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 0.3;
+}
+
+.container:hover .overlay-content {
+    opacity: 1;
+}
+
+.button {
+    background-image: linear-gradient(to right, #1F5A98, #66C9ED);
+    color: #fff;
+    border-radius: 40px;
+    padding: 1.75% 2.5%;
+}
+
+.half-content-single {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.foot {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.foot img {
+    width: 250px;
+    height: auto;
+}
+
+.foot p {
+    color: #999;
+}
+
+.fab {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font: normal normal normal 18px/2 FontAwesome;
+    font-size: 20px;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: #5e5e5e;
+    margin-left: 25px;
 
 }
+
+.linkto a:hover{
+    color: #1B74AF;
+}
+
+
